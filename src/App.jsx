@@ -1,6 +1,9 @@
 import React from 'react'
 import {Hero,Sales,FlexContent, Stories,Footer, Navbar, Cart} from './components';
 import {heroapi,popularsales,toprateslaes,highlight,sneaker, story, footerAPI} from './data/data.js'
+import { inject } from '@vercel/analytics';
+
+inject();
 const App = () => {
   return (
     <>

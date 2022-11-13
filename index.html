@@ -9,6 +9,12 @@
     <meta name="author" content="Prashant">
     <title>NIKE REACT PROJECT</title>
     <script>
+      window.va = function () {
+        (window.vaq = window.vaq || []).push(arguments);
+      };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script>
       window.va('beforeSend', (event) => {
         if (event.url.includes('secret')) return null;
         return event;
