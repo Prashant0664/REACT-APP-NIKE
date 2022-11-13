@@ -10,16 +10,16 @@ const Hero = ({heroapi:{title,subtitle,btntext,img,sociallinks,videos}}) => {
       <div className='hero-img-container nike-container'>
         <div className='hero-img-subcont mt-28 md:mt-24'>
           <h1 className="h1-text-top">{title}</h1>
-          <h1 className="h1-text-top md:mt-4 sm:mt-1 xsm:mt-0">{subtitle}</h1>
+          <h1 className="h1-text-top md:mt-4 sm:mt-1 xsm:mt-0 ">{subtitle}</h1>
           <button type='button' className='button-theme button-top2a'>{btntext}</button>
-          <div className='video-clip-div top-[35vh] lg:top-[27vh] left-[11%] xl:left-0 w-auto h-auto'>
+          <div className='video-clip-div top-[35vh] lg:top-[27vh] left-[11%] xl:left-0 w-auto h-auto xsm:hidden'>
             {videos?.map((val,i)=>(<Clips
               key={i}
               imgsrc={val.imgsrc}
               clip={val.clip}
             />))}
           </div> 
-          <div className='social-link-icon-div ls:top-[27vh] right-0 gap-3'>
+          <div className='social-link-icon-div ls:top-[27vh] right-0 gap-3 xsm:top-[20vh]'>
             {sociallinks?.map((val,i)=>(<SocialLink
                     key={i}
                     icon={val.icon}

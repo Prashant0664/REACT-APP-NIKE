@@ -35,7 +35,7 @@ const Item = ({ifExists,id,color,shadow,title,text,img,btn,rating,price}) => {
         
             <div className='flex items-center gap-3'>
                 <button type='button' className=' bg-white opacity-90 blur-effect-theme button-theme p-0.5 shadow shadow-sky-200' onClick={onAddToCart}><ShoppingBagIcon className='icon-style text-slate-900' /></button>
-                <button type='button' className='bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black' onClick={()=>{onAddToCart(); onCartToggle();}}>{btn}</button>
+                <button type='button' className='bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm z-[600] text-black' onClick={()=>{onAddToCart(); onCartToggle();}}>{btn}</button>
             </div>
 
         </div>
